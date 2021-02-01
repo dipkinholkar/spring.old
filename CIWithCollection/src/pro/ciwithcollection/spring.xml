@@ -1,0 +1,30 @@
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+
+
+
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean id="q" class="pro.ciwithcollection.Quetion">
+
+
+<constructor-arg value="101" type="int"></constructor-arg>
+<constructor-arg value="dipak" ></constructor-arg>
+<constructor-arg >
+
+<list>
+<value>java is programming language.</value>
+<value>java is platform independant</value>
+<value>java is object oriented language.</value>
+</list>
+
+</constructor-arg>
+
+
+
+</bean>
+
+</beans>

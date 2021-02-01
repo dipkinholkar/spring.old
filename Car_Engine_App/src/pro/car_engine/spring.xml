@@ -1,0 +1,26 @@
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="c" class="pro.car_engine.Car">
+
+<property name="carName" value="Audi"/>
+<property name="Engine" ref="e"></property>
+</bean>
+		
+
+<bean id="e" class="pro.car_engine.Engine">
+
+<property name="modelName" value="101"/>
+
+</bean>
+
+
+
+
+
+
+
+</beans>

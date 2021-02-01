@@ -1,0 +1,43 @@
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+
+
+
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+													
+	<bean id="a" class="pro.dependentobject.Address">
+	
+	
+	<constructor-arg value="parbhani"></constructor-arg>
+	<constructor-arg value="maharashtra"></constructor-arg>
+	
+	
+	
+	
+	</bean>					
+   
+
+
+
+
+   <bean id="e" class="pro.dependentobject.Employee">
+   <constructor-arg value="101" type="int"></constructor-arg>
+   <constructor-arg value="dipak"></constructor-arg>
+   <constructor-arg> <ref  bean="a"/></constructor-arg>
+   </bean>
+
+
+
+
+
+
+
+
+
+
+
+</beans>
